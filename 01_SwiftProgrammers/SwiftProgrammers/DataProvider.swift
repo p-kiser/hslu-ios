@@ -32,9 +32,8 @@ class DataProvider {
             PersonData(firstName: "Hubertus", lastName: "Halbfas", plz: 6003),
             PersonData(firstName: "Geter", lastName: "Gowen", plz: 6017),
             PersonData(firstName: "Bootsy", lastName: "Collins", plz: 1234),
-            PersonData(firstName: "Flavor", lastName: "Flave", plz: 6060)
+            PersonData(firstName: "Flavor", lastName: "Flav", plz: 6060)
         ]
     }
-        
 }
 

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         // Add title
         self.view.backgroundColor = UIColor.darkGray
         let label = UILabel(frame: CGRect(x: 50, y: 50, width: 300, height: 60))
-        label.backgroundColor = UIColor.black
+        label.backgroundColor = UIColor.brown
         label.text = "Get Schwifty"
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.white
@@ -43,6 +43,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // add label for String
     func addLabel(name: String, position: Float) {
         
         let label = UILabel(frame: CGRect(x: 50, y: Int(position), width: 300, height: 60))
@@ -50,7 +51,7 @@ class ViewController: UIViewController {
         label.textColor = getColor(position: Int(position))
         self.view.addSubview(label)
     }
-    
+    // add label for PersonData object
     func addLabel(person: PersonData, position: Int) {
         let label = UILabel(frame: CGRect(x: 50, y: position, width: 300, height: 60))
         label.text = person.firstName + "\t" + person.lastName +  "\t" + String(person.plz)
@@ -58,9 +59,9 @@ class ViewController: UIViewController {
         self.view.addSubview(label)
     }
     
+    // return a color based on position
     func getColor(position: Int) -> UIColor {
         var color : UIColor;
-        
         switch ((Int(position) - self.offset)/self.rowHeight) % 3 {
         case 0:
             color = UIColor.green
@@ -68,11 +69,9 @@ class ViewController: UIViewController {
             color = UIColor.magenta
         case 2:
             color = UIColor.cyan
-        default:
+        default:		
             color = UIColor.gray
         }
-        
         return color
     }
 }
-
