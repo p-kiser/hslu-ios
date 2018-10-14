@@ -26,7 +26,7 @@ class DataProvider {
         ]
         
         self.memberPersons = [
-            PersonData(firstName: "Hansfranz", lastName: "Michelmeier", plz: 6064),
+            PersonData(firstName: "Hansfranz", lastName: "Müllermeier", plz: 6064),
             PersonData(firstName: "Richie", lastName: "Spice", plz: 8000),
             PersonData(firstName: "Erding", lastName: "Weißbier", plz: 4554),
             PersonData(firstName: "Hubertus", lastName: "Halbfas", plz: 6003),
