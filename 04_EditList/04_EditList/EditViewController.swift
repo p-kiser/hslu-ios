@@ -26,7 +26,7 @@ class EditViewController: UIViewController {
     @IBAction func saveButtonPressed(_ sender: UIButton) {
         person?.lastName = lastnameTextField.text ?? ""
         person?.firstName = firstnameTextField.text ?? ""
-        person?.plz = Int(zipTextField.text ?? "") ?? -1
+        person?.plz = Int(zipTextField.text ?? "")!
         self.dismiss(animated: false, completion: nil)
     }
 }
